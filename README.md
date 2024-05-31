@@ -94,7 +94,7 @@ Select internet interface:  <br/>
 <img src="https://i.imgur.com/YTJqTDE.png"/>
 <br />
 <br />
-Add roles, selecte DHCP, and install features:  <br/>
+Add roles, select DHCP, and install features:  <br/>
 <img src="https://i.imgur.com/2D4SJHu.png"/>
 <br />
 <br />
