@@ -18,20 +18,80 @@ Project consists of using VirtualBox VMs running Windows Server with a custom Po
 <h2>Project walk-through:</h2>
 
 <p align="center">
-Setting Up VM: <br/>
-<img src="https://i.imgur.com/HnCoEIR.png"/>
+Open up VirtualBox: <br/>
+<img src="https://i.imgur.com/78LZCCN.png"/>
 <br />
 <br />
-Use custom PowerShell script inside the VM to extract metadata:  <br/>
-<img src="https://i.imgur.com/uXF2YEh.png"/>
+Download and mount the Windows Server on the domain controller virtual machine:  <br/>
+<img src="https://i.imgur.com/exzUiYe.jpeg"/>
 <br />
 <br />
-Utilize custom code to make a custom log with the geodata from the failed RDP log file: <br/>
-<img src="https://i.imgur.com/FCPcDyj.png"/>
+Create two NICs, one dedicated for internet running NAT and one dedicated to the internal VM network:  <br/>
+<img src="https://i.imgur.com/epN6jh2.png"/>
 <br />
 <br />
-Create map in workbooks with custom query to display the failed RDP brute force attacks:  <br/>
-<img src="https://i.imgur.com/Bm383Mq.png"/>
+Launch and set up VM: <br/>
+<img src="https://i.imgur.com/QSVUVUL.png"/>
+<br />
+<br />
+Navigate to Networks:  <br/>
+<img src="https://i.imgur.com/zjrsyB2.png"/>
+<br />
+<br />
+Differentiate networks for legibility and assign IP address to internal network: <br/>
+<img src="https://i.imgur.com/WtgB2bz.png"/>
+<br />
+<br />
+Rename system for legibility:  <br/>
+<img src="https://i.imgur.com/Yy5DGkY.png"/>
+<br />
+<br />
+Install Active Directory Domain Services and create domain through Server Manager: <br/>
+<img src="https://i.imgur.com/SbSYPqR.png"/>
+<br />
+<br />
+Select Active Directory Domain Sevices:  <br/>
+<img src="https://i.imgur.com/KND8SME.png"/>
+<br />
+<br />
+Complete install:  <br/>
+<img src="https://i.imgur.com/RRbikzj.png"/>
+<br />
+<br />
+Name domain in deployment configuration:  <br/>
+<img src="https://i.imgur.com/AzsOZby.png"/>
+<br />
+<br />
+Navigate to Active Directory Users and Computers:  <br/>
+<img src="https://i.imgur.com/AwvvSoN.png"/>
+<br />
+<br />
+Create an organaztional unit to place Admin account:  <br/>
+<img src="https://i.imgur.com/7Sh60AE.png"/>
+<br />
+<br />
+Create new user:  <br/>
+<img src="https://i.imgur.com/VK5j7D2.png"/>
+<br />
+<br />
+Make user a domain admin:  <br/>
+<img src="https://i.imgur.com/AczJoFf.png"/>
+<br />
+<br />
+Install RAS/NAT on domain controller to allow clients to access internet while on private internal network:  <br/>
+<img src="https://i.imgur.com/B81JNDg.png"/>
+<br />
+<br />
+Install Routing:  <br/>
+<img src="https://i.imgur.com/ELDoGrt.png"/>
+<br />
+<br />
+Configure and enable routing and remote access and install NAT:  <br/>
+<img src="https://i.imgur.com/MfIb16S.png"/>
+<br />
+<br />
+Selecte internet interface:  <br/>
+<img src="https://i.imgur.com/YTJqTDE.png"/>
 <br />
 <br />
 </p>
